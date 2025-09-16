@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array result in list</title>
+</head>
+
+<body>
+    <h2>Array Operations on</h2>
+    <ul id="results"></ul>
+
+    <script>
+        const numbers = [2, 5, 8, 10, 13];
+
+        const sum = numbers.reduce((acc, currval) => acc + currval, 0);
+
+        const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+        const greaterThan7 = numbers.filter(num => num > 7);
+
+        const results = document.getElementById("results");
+
+        console.log(sum);
+
+    </script>
+</body>
+
+</html>
